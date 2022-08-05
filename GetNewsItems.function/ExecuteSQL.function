@@ -1,0 +1,99 @@
+{
+  "Properties": [
+    {
+      "Id": "Connection string",
+      "Type": "Compiled:String",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "$.Settings.DB_Conn",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    },
+    {
+      "Id": "Connection type",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Database.Common.Sql.ConnectionTypeSelection, Twenty57.Linx.Plugins.Database, Version=1.1.1.0, Culture=neutral, PublicKeyToken=null",
+      "ValueUsage": "DesignTime",
+      "Value": "SqlServer"
+    },
+    {
+      "Id": "Expression0",
+      "Type": "Compiled:Object",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "ForEach.Loop.data.id",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    },
+    {
+      "Id": "Expression1",
+      "Type": "Compiled:Object",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "ForEach.Loop.data.id",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    },
+    {
+      "Id": "Expression2",
+      "Type": "Compiled:Object",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "ForEach.Loop.data.title",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    },
+    {
+      "Id": "Expression3",
+      "Type": "Compiled:Object",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "ForEach.Loop.data.url",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:String"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    },
+    {
+      "Id": "Expression4",
+      "Type": "Compiled:Object",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "UnixDateConvert",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:DateTime"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    },
+    {
+      "Id": "Result type",
+      "Type": "Compiled:Twenty57.Linx.Plugins.Database.ExecuteSQL.ResultType, Twenty57.Linx.Plugins.Database, Version=1.1.1.0, Culture=neutral, PublicKeyToken=null",
+      "ValueUsage": "DesignTime",
+      "Value": {
+        "CustomType": null,
+        "Fields": [],
+        "IsCustomType": true
+      }
+    },
+    {
+      "Id": "SQL",
+      "Type": "Compiled:String",
+      "ValueUsage": "RuntimeRead",
+      "Value": "IF NOT EXISTS (SELECT 1 FROM dbo.Articles WHERE RedditID = @{ForEach.Loop.data.id})\r\n\r\nINSERT INTO dbo.Articles\r\n           (RedditID\r\n           ,Title\r\n           ,URL\r\n           ,CreatedDate)\r\n     VALUES\r\n           (@{ForEach.Loop.data.id}\r\n           ,@{ForEach.Loop.data.title}\r\n           ,@{ForEach.Loop.data.url}\r\n           ,@{UnixDateConvert}\r\n           );\r\n"
+    },
+    {
+      "Id": "Timeout",
+      "Type": "Compiled:Int32",
+      "ValueUsage": "DesignTime",
+      "Value": 60
+    }
+  ],
+  "Version": "2"
+}

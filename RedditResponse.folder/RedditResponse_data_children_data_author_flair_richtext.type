@@ -1,0 +1,21 @@
+{
+  "Id": "do4k",
+  "Name": "RedditResponse_data_children_data_author_flair_richtext",
+  "Properties": [
+    {
+      "Id": "BrfB",
+      "Name": "a",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "U3tP",
+      "Name": "e",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "H7JY",
+      "Name": "u",
+      "Type": "Compiled:String"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+[
+  {
+    "Id": "cDI7",
+    "Name": "DB_Conn",
+    "Type": "Compiled:String",
+    "Value": "Data Source=.;Initial Catalog=DemoDB;Integrated Security=;User ID=sa;Password=123qwerASDF;"
+  }
+]

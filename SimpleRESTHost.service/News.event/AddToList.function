@@ -1,0 +1,66 @@
+{
+  "Properties": [
+    {
+      "Id": "List",
+      "Type": "List:Custom:Pb7L",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "List",
+        "CompiledExpression": "={0}",
+        "Type": "List:Custom:Pb7L"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    },
+    {
+      "Id": "Value",
+      "Type": "Custom:Pb7L",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "ParsedExpression": "{\"DateCreated\":{\"LinxExpression\":\"[PARSED]\"}, \"ID\":{\"LinxExpression\":\"[PARSED]\"}, \"Title\":{\"LinxExpression\":\"[PARSED]\"}, \"URL\":{\"LinxExpression\":\"[PARSED]\"}}",
+        "ExpressionPlaceholders": [
+          {
+            "typePath": [
+              "DateCreated"
+            ],
+            "expression": {
+              "Expression": "ExecuteSQL.ForEachRow.CreatedDate.ToString(\"yyyy-MM-dd HH:mm\")",
+              "CompiledExpression": "={0}.ToString(\"yyyy-MM-dd HH:mm\")",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "ID"
+            ],
+            "expression": {
+              "Expression": "ExecuteSQL.ForEachRow.ID",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:Int64"
+            }
+          },
+          {
+            "typePath": [
+              "Title"
+            ],
+            "expression": {
+              "Expression": "ExecuteSQL.ForEachRow.Title",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          },
+          {
+            "typePath": [
+              "URL"
+            ],
+            "expression": {
+              "Expression": "ExecuteSQL.ForEachRow.URL",
+              "CompiledExpression": "={0}",
+              "Type": "Compiled:String"
+            }
+          }
+        ]
+      },
+      "ValueType": "Linx.JsonExpression"
+    }
+  ]
+}

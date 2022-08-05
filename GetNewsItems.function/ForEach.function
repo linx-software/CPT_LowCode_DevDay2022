@@ -1,0 +1,24 @@
+{
+  "ExecutionPaths": [
+    {
+      "PluginId": "Loop",
+      "Name": "Loop",
+      "Result": "List:Custom:T6Vf",
+      "Order": 0,
+      "IterationHint": "ZeroOrMore"
+    }
+  ],
+  "Properties": [
+    {
+      "Id": "List",
+      "Type": "List:Custom:T6Vf",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "RedditResponse.data.children",
+        "CompiledExpression": "={0}",
+        "Type": "List:Custom:T6Vf"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    }
+  ]
+}

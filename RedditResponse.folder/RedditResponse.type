@@ -1,0 +1,16 @@
+{
+  "Id": "Yeu7",
+  "Name": "RedditResponse",
+  "Properties": [
+    {
+      "Id": "ibqR",
+      "Name": "kind",
+      "Type": "Compiled:String"
+    },
+    {
+      "Id": "Hvqs",
+      "Name": "data",
+      "Type": "Custom:tVQ7"
+    }
+  ]
+}

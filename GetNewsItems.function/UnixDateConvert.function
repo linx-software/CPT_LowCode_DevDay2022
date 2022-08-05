@@ -1,0 +1,39 @@
+{
+  "Properties": [
+    {
+      "Id": "8Hnb",
+      "Type": "Compiled:Double",
+      "ValueUsage": "RuntimeRead",
+      "Value": {
+        "Expression": "ForEach.Loop.data.created",
+        "CompiledExpression": "={0}",
+        "Type": "Compiled:Double"
+      },
+      "ValueType": "Linx.CSharpExpression"
+    },
+    {
+      "Id": "ParameterNameMapping",
+      "Type": "Compiled:System.Collections.Generic.IDictionary`2[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e",
+      "ValueUsage": "DesignTime",
+      "Value": {
+        "8Hnb": "UnixTime"
+      },
+      "ValueType": "System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e"
+    },
+    {
+      "Id": "Process",
+      "Type": "Compiled:Linx.IProcessReference",
+      "ValueUsage": "DesignTime",
+      "Value": {
+        "Id": "uC18",
+        "Name": "UnixDateConvert",
+        "Parameters": "Generated:PNwP",
+        "Result": "Compiled:DateTime",
+        "IsValid": true,
+        "QualifiedPath": "PC:UnixDateConvert"
+      },
+      "ValueType": "Linx.ProcessReference"
+    }
+  ],
+  "Result": "Compiled:DateTime"
+}
