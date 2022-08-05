@@ -1,12 +1,12 @@
-# Project name
+# CPT Low-Code Developer Day 2022
 
 ## Description
-
+What a great event. This solution was built in the talk. Please feel free to download it. 
+It follows the below logic:
+![Solution Diagram](msedge_MOilgCNnDI.png)
 ## Installation
-
-## Usage
-
-## Contributing
+1. Run the SQL script provided to create the table
+2. Change the connection string to your Database. (this is set in the settings)
 
 For questions please ask the [Linx community](https://linx/software/community) or use the [Slack channel](https://linxsoftware.slack.com/archives/C01FLBC1XNX). 
 
